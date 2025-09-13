@@ -1,6 +1,8 @@
 package com.example.app;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void alterarTexto(View view){
+        TextView texto= findViewById(R.id.textoExibicao);
+        texto.setText("Texto Alterado");
     }
 }
